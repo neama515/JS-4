@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="fa-bookmark">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body class="d-flex justify-content-center">
+
+    <div id="signIn" class="loginPage d-non Page d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-center my-3">Smart Login System
+        </h1>
+        <input type="text" placeholder="Enter your email" oninput="validEmail2()" class="w-100 my-1 p-2"
+            id="emailLogin">
+        <span id="notvalidEmail1" class="d-none">email is invalid must contain at least 5 characters then @ and (gmail or
+            yahoo)
+            .com</span>
+
+        <input type="password" placeholder="Enter your password" class="w-100 my-3 p-2" id="passLogin">
+        <span class="d-none" id="inputsReq2">All inputs is required</span>
+        <span class="d-none" id="incorrectE" >incorrect email or password</span>
+        <button type="button" onclick="signInfo()" class="btn btn1 btn-outline-info w-100">Login</button>
+        <p>Don't have an account? <button onclick="signupPage()" class="signIn">Sign Up</button></p>
+    </div>
+    <div id="signUp" class="signupPage Page d-none d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-center my-3">Smart Login System
+        </h1>
+        <input type="text" placeholder="Enter your name" class="w-100 my-1 p-2" id="nameSignup">
+        <input type="text" oninput="validEmail()" placeholder="Enter your email" class="w-100 mt-3 p-2"
+            id="emailSignup">
+        <span id="notvalidEmail" class="d-none">email is invalid must contain at least 5 characters then @ and (gmail or
+            yahoo) .com</span>
+
+        <input type="password" placeholder="Enter password" class="w-100 my-3 p-2" id="passSignup">
+        <span class="d-none" id="inputsReq">All inputs is required</span>
+        <span class="d-none" id="emailExists">email already exists</span>
+        <span class="d-none" id="nameUsed">name already used before</span>
+        <span class="d-none success" id="success">success</span>
+        <button onclick="addAccount()" class="btn btn1 btn-outline-info w-100">Sign Up</button>
+        <p>Don't have an account? <button onclick="signInPage()" class="signIn">Signin</button></p>
+    </div>
+    <div id="mainPage" class="mainPage w-100 d-none d-flex justify-content-center flex-column align-items-center">
+        <div class="pp w-100">
+            <nav class="d-flex justify-content-between container navbar">
+                <a class="navbar-brand" href="#">SMART LOGIN</a>
+                <button class="btn btn-outline-warning btn2" onclick="logout()" type="button">Logout</button>
+
+            </nav>
+        </div>
+
+        <div class=" py-5 Page p2 d-flex flex-row justify-content-center align-items-center ">
+
+            <h1>Welcome   <span class="h1" id="h1"></span>
+            </h1>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>

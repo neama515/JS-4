@@ -1,0 +1,105 @@
+body {
+  background-color: #24353f;
+}
+input {
+  background-color: #24353f;
+  border: 1px rgb(206, 212, 218) solid;
+  border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+}
+input:focus {
+  border: 1px solid #80bdff;
+}
+::placeholder {
+  color: #b6b6b6;
+}
+h1 , span.h1{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  color: rgb(23, 162, 184);
+  font-size: 40px;
+  line-height: 48px;
+}
+.Page {
+  margin-top: 50px;
+  box-shadow: 7px 7px 30px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px 45px 60px;
+  width: 54%;
+}
+.btn1 {
+  color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+  font-family: "Titillium Web", sans-serif;
+  border: 1px solid;
+  font-weight: 400;
+
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: border 1s;
+}
+p {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 24px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.btn1:hover {
+  color: white !important;
+  background-color: rgb(23, 162, 184) !important;
+}
+.btn1:focus {
+  box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
+}
+span {
+  color: red;
+}
+span.success {
+  color: green;
+}
+.pp {
+  box-shadow: 7px 7px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.navbar-brand {
+  color: white;
+}
+.btn2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn2:hover {
+  color: white !important;
+  background-color:rgb(255, 193, 7) !important;
+}
+.btn2:focus {
+  box-shadow: 0 0 0 3px rgba(255, 193, 7,0.5);
+}
+.p2{
+margin-top: 240px;
+}
+button.signIn{
+  background-color: #24353f;
+  border: 0;
+  color: white;
+}
+button.signIn:hover{
+  text-decoration: underline;
+
+}
